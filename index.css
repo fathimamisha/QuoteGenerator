@@ -1,0 +1,93 @@
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(bg-quotes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    text-align: center;
+    padding: 1em;
+}
+
+h3{
+    color: rgb(81, 49, 111);
+    text-shadow: 2px 2px 5px white;
+    font-style: oblique;
+    font-size: 1.8rem;
+    margin-bottom: 1rem
+
+}
+
+/*Main quote Box*/
+.box{
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    border: 3px solid black;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+}
+
+.box:hover{
+    box-shadow: 20px 20px 25px rgb(49, 43, 44);
+}
+
+#quote{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    word-wrap: break-word;
+}
+
+#author{
+    font-weight: bold;
+    float: right;
+    margin-bottom: 1.5em;
+    font-style: italic;
+}
+
+
+#btn{
+    flex-wrap: wrap;
+    background-color: rgb(239, 196, 238);
+    border: 2px solid black;;
+    border-radius: 20px;
+    padding: 0.8em 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover{
+    background-color: rgb(240, 191, 243);
+    box-shadow: 0px 0px 25px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  #quote {
+    font-size: 1.1rem;
+  }
+
+  #btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
